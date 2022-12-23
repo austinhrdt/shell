@@ -21,9 +21,6 @@ source $ZSH/oh-my-zsh.sh
 # [shift + q] autoaccept suggestion
 bindkey 'Q' autosuggest-accept
 
-# source gvm
-[[ -s "$GVM_ROOT/scripts/gvm" ]] && source "$GVM_ROOT/scripts/gvm"
-
 # load my aliases
 source ~/shell/aliases.zsh
 
@@ -32,6 +29,9 @@ source ~/shell/functions.zsh
 
 # load my custom environment variables
 load-environment ~/shell/.env
+
+# source gvm
+[[ -s "$GVM_ROOT/scripts/gvm" ]] && source "$GVM_ROOT/scripts/gvm"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
